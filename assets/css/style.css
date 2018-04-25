@@ -27,3 +27,52 @@ body{
     font-size: 40pt;
     color: rgb(82, 45, 16)
 }
+
+.content-font{
+    font-size:22pt;
+    text-align: center;
+    font-family: 'Coda Caption', sans-serif;
+    color: rgb(110, 59, 21);
+}
+
+#initial-msg{
+    width: 100%;
+    margin-bottom: 3%;
+    font-size:22pt;
+    text-align: center;
+    font-family: 'Coda Caption', sans-serif;
+    color: rgb(110, 59, 21);
+}
+
+#hangman{
+    text-align: center;
+    padding: 0 auto;
+    margin-bottom: 3%;
+    font-size:22pt;
+    text-align: center;
+    font-family: 'Coda Caption', sans-serif;
+    color: rgb(110, 59, 21);
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#hangman-holder{
+    width: auto;
+    display: inline-block;
+}
+
+.letter{
+    border: 2px solid transparent;
+    width: 30px;
+    float: left;
+    margin: 0 auto;
+}
+
+#start-guessing{
+    display: none;
+    margin-bottom: 3%;
+}

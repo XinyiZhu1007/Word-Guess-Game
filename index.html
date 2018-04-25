@@ -5,8 +5,8 @@
     <title>Xinyi's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Coda+Caption:800" rel="stylesheet">
-    <script src="assets/javascript/game.js"></script>
 </head>
 
 <body>
@@ -14,16 +14,21 @@
 
     <div class="content">
         <h1 id="header">Shonen Jump Manga Guess!</h1>
-        <div id="initial-msg"></div>
-        <div id="guess"></div>
+        <div class="content-font" id="initial-msg">Press Any Key to Start...</div>
+        <!-- <div id="input"></div> -->
+        <div class="content-font" id="hangman">
+            <div class="clearfix" id="hangman-holder"></div>
+        </div>
+        <div class="content-font" id="start-guessing">Your current guess is <span id="current-guess"><p>...</p></span></div>
         <div id="remaining"></div>
         <div id="attempts"></div>
         <div id="result"></div>
     
 
-        <script src="assets/javascript/game.js"></script>
 
     </div>
-    
+
+    <script src="assets/javascript/game.js"></script>
+
 </body>
 </html>
