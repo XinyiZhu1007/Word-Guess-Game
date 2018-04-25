@@ -34,6 +34,8 @@ var word="",
 var arrayWord=[],
     arrayWrongLetters=[];
 
+
+
 //press anykey, make initial-msg disappear
 //and background picking a word from mangaArray for guessing
 $('body').one("keyup", function() {
@@ -59,26 +61,32 @@ $('body').one("keyup", function() {
     $("#start-guessing").show();
 
 });
+
 for (counter=0; counter<10; counter++) {
     input = document.getElementById("current-guess");
     document.onkeyup = function(event) {
         input.textContent = event.key;
         char = $("#current-guess").text();
-        $('.letter[data-letter=char]').text($(this).attr("data-letter"));
+        for(i=0; i<word.length; i++){
+            if(arrayWord[i]==char) {
+                $(".letter[data-letter=char]").text($(this).attr("data-letter"));
+            }
+        }
+        // $('.letter[data-letter=char]').text($(this).attr("data-letter"));
 
         // $('[data-test="the_exact_value"]')
-        if($(".letter").text()==char){
-            $(".letter").text($(this).attr("data-letter"));
-        }
-        else{
-            for(j=0; j<arrayWrongLetters.length; j++) {
-                if(char == arrayWrongLetters[j]) {
-                    counter--;
-                }
-                else {
-                    arrayWrongLetters.push(char);
-                }
-            }
+        // if($(".letter").text()==char){
+        //     $(".letter").text($(this).attr("data-letter"));
+        // }
+        // else{
+        //     for(j=0; j<arrayWrongLetters.length; j++) {
+        //         if(char == arrayWrongLetters[j]) {
+        //             counter--;
+        //         }
+        //         else {
+        //             arrayWrongLetters.push(char);
+        //         }
+        //     }
         }
     };
     
@@ -88,7 +96,7 @@ for (counter=0; counter<10; counter++) {
     //     $("#current-guess").text(char);
     //     console.log(char);
     // });
-}
+
 
 
 
