@@ -13,9 +13,9 @@ body{
     margin-right: 15%;
     padding: 0 2.5%;
     width: 70%;
+    height: 100%;
     text-align: center;
     background-color: rgba(255,247,230,75%);
-   
 }
 
 #header{
@@ -28,16 +28,29 @@ body{
     color: rgb(82, 45, 16)
 }
 
-.content-font{
-    font-size:22pt;
+.content-style{
     text-align: center;
     font-family: 'Coda Caption', sans-serif;
+    margin-bottom: 3%;
+}
+
+.sub-style1{
+    font-size:22pt;
     color: rgb(110, 59, 21);
+}
+
+.sub-style2{
+    font-size:20pt;
+    color: rgb(175, 95, 33);
+}
+
+.sub-style3{
+    font-size:30pt;
+    color: rgb(146, 38, 11);
 }
 
 #initial-msg{
     width: 100%;
-    margin-bottom: 3%;
     font-size:22pt;
     text-align: center;
     font-family: 'Coda Caption', sans-serif;
@@ -47,7 +60,6 @@ body{
 #hangman{
     text-align: center;
     padding: 0 auto;
-    margin-bottom: 3%;
     font-size:22pt;
     text-align: center;
     font-family: 'Coda Caption', sans-serif;
@@ -74,5 +86,17 @@ body{
 
 #start-guessing{
     display: none;
-    margin-bottom: 3%;
+    margin-bottom: 6%;
 }
+
+#winner-pic{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: auto;
+    border: 8px solid rgb(110, 59, 21);
+}
+
